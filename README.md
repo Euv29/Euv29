@@ -2,11 +2,6 @@
 
 I'm **Venâncio Wapinda**, a technology enthusiast and developer specialized in **Web Development** and **UI Design**. Welcome to my GitHub profile!
 
-## 🌱 About Me:
-- **Location:** Huambo, Angola
-- **Quote:** "Se eu vi mais longe, foi por estar sobre ombros de gigantes."
-- **Interests:** Web Development, Open Source, Technology, and Learning.
-
 ## 🔧 Technologies & Tools:
 - **Languages:** PHP, JavaScript, HTML, CSS.
 - **Frameworks:** React Native, Laravel, Ionic.
