@@ -6,7 +6,7 @@ I'm **Venâncio Wapinda**, a technology enthusiast and developer specialized in 
 - **Languages:** PHP, JavaScript, HTML, CSS.
 - **Frameworks:** React Native, Laravel, Ionic.
 - **Tools:** Git, Docker, VS Code, figma.
-- 🌱 I’m currently learning UI Design, VueJs.
+- 🌱 I’m currently learning UI Design and Next.Js.
 
 ## 🧑‍💻 Most Used Languages:
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Euv29&layout=compact&theme=radical)
