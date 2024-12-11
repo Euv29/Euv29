@@ -12,7 +12,7 @@ I'm **Venâncio Wapinda**, a technology enthusiast and developer specialized in 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Euv29&layout=compact&theme=radical)
   
 ## 🚀 Projects:
-- **[Venâncio Wapinda](https://venancio-wapina.me):** A personal website showcasing my work and projects.
+- **[Venâncio Wapinda](https://venancio-wapinda.me/):** A personal website showcasing my work and projects.
 
 <!--## 💼 Experience:
 - [Company Name](link-to-company) - Brief description of your ro
