@@ -26,9 +26,9 @@ I'm **Venâncio Wapinda**, a technology enthusiast and developer specialized in 
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Euv29)
 
 ## 📫 How to reach me:
-- **Email:** venancio.contacto@gmail.com
-- **LinkedIn:** 
-- **Twitter:**
+- **Email:** contact@venancio-wapinda.me
+- **LinkedIn:** [Venancio Wapinda](https://www.linkedin.com/in/ven%C3%A2ncio-wapinda-73b00b355/)
+- **X:** [@venanciowapinda](https://x.com/venanciowapinda)
 - **Instagram:** [@venancio.wapinda](https://www.instagram.com/venancio.wapinda)
 
 <!--
