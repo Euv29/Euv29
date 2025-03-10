@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Istok Web';
+  src: url('/font/IstokWeb-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Istok Web';
+  src: url('/font/IstokWeb-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base colors */
+  --primary: #0057FF; /* Make sure primary color is defined */
+  --primary-hover: #0046CC; /* A slightly darker version for hover states */
+
+  /* Light mode (default) */
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #f9f9f9;
+  --card-foreground: #171717;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #0057FF;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #f3f4f6;
+  --accent-foreground: #111827;
+
+  /* Other variables */
+  --font-family: 'Istok Web', sans-serif;
+}
+
+/* Dark mode class - applied when .dark class is on html element */
+.dark {
+  --background: #121212;
+  --foreground: #ededed;
+  --card: #1e1e1e;
+  --card-foreground: #ededed;
+  --border: #2d2d2d;
+  --input: #2d2d2d;
+  --ring: #0057FF;
+  --muted: #262626;
+  --muted-foreground: #a1a1aa;
+  --accent: #262626;
+  --accent-foreground: #f9fafb;
+}
+
+/* Add this if you want to use the CSS variables directly */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family);
+  font-size: 15px;
+  overflow-x: hidden;
+  /* Add smooth transition for color changes */
+  transition: background-color 0.4s ease, color 0.4s ease;
+  cursor: none;
+}
+
+/* Add transitions to all elements that use CSS variables */
+*,
+*::before,
+*::after {
+  transition: background-color 0.5s ease,
+    border-color 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.5s ease;
+}
+
+/* Mode transition flash for smooth effects */
+.mode-transition-flash {
+  position: fixed;
+  inset: 0;
+  background-color: var(--primary); /* Use primary color instead of white */
+  z-index: 200;
+  pointer-events: none;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.dark .mode-transition-flash {
+  background-color: rgba(0, 0, 0, 0.98);
+}
+
+/* Progress bar fill animation */
+.progressFill {
+  height: 100%;
+  background-color: #0057FF;
+  border-radius: 9999px;
+  width: var(--progress-width);
+  transition: width 100ms ease-out;
+}
+
+/* Make the default cursor invisible on hover-able elements */
+a, button, input[type="submit"], [role="button"], .cursor-pointer {
+  cursor: none;
+}
+
+/* Show default cursor as fallback for mobile and touch devices */
+@media (max-width: 768px), (pointer: coarse) {
+  body, a, button, input[type="submit"], [role="button"], .cursor-pointer {
+    cursor: auto;
+  }
+}
+
+.bg-icon {
+  transition: opacity 1.5s ease-in;
+  pointer-events: none;
+}

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^cyscomp\.co\.ao [NC]
+RewriteRule ^(.*)$ https://www.cyscomp.co.ao/$1 [L,R=301]
