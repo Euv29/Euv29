@@ -108,7 +108,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   }, [projects, activeFilter]);
   
   return (
-    <div className={`w-full py-14 ${textColorClass}`}>
+    <div className={`w-full py-20 min-h-screen ${textColorClass}`}>
       <ScrollReveal>
         <h2 className="mb-8 font-bold text-3xl text-center">Meus Projetos</h2>
       </ScrollReveal>
@@ -154,6 +154,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
+                      unoptimized={project.image.endsWith('.gif')}
                     />
                   </div>
                   <div className="p-6">
@@ -222,7 +223,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Empty state */}
       {filteredProjects.length === 0 && (
         <div className="py-10 text-center">
-          <p className="text-gray-500 dark:text-gray-400">
+          <p className="text-gray-700 dark:text-gray-600">
             Nenhum projeto encontrado nessa categoria.
           </p>
         </div>

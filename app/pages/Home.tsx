@@ -94,13 +94,13 @@ const Home = ({
   ];
 
   return (
-    <div className="z-10 relative mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div className="z-10 relative mx-auto px-4 sm:px-4 lg:px-6 w-full">
 
       {/* Hero Section - with transparent background */}
-      <section id="home" className={`flex md:flex-row flex-col-reverse items-center md:py-32 py-14  ${textColorClass}`}>
+      <section id="home" className={`flex md:flex-row flex-col-reverse items-center justify-center md:py-32 min-h-screen  ${textColorClass}`}>
         <ScrollReveal direction="right" className="mb-8 md:mb-0 md:w-1/2">
-          <h1 className="mb-4 font-bold text-4xl md:text-6xl">Venancio Wapinda</h1>
-          <h2 className="mb-6 text-primary text-xl md:text-2xl">UI/UX Designer & Dev Front-End</h2>
+          <h1 className="mb-4 font-bold text-3xl md:text-6xl">Venancio Wapinda</h1>
+          <h2 className="mb-6 text-primary text-xl md:text-xl">UI/UX Designer & Dev Front-End</h2>
           <p className="mb-8 text-lg">
             Transformando ideias em experiências digitais incríveis. Vamos criar algo extraordinário juntos? Explore meu portfólio e descubra como sua visão pode ganhar vida!
           </p>
@@ -220,6 +220,7 @@ const Home = ({
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover"
+                    unoptimized={project.image.endsWith('.gif')} // Add this line
                   />
                 </div>
                 <div className="p-6">
@@ -302,7 +303,7 @@ const Home = ({
 
         <div className="mx-auto px-4 max-w-6xl">
           {/* Componente de texto com outline animado */}
-          <div className="flex justify-center items-center mb-8 h-[30px] md:h-[80px]">
+          <div className="flex justify-center items-center mb-8 h-[28px] md:h-[80px]">
             <OutlineText text="Pronto Para a Magia?" className="w-full" />
           </div>
           <ScrollReveal>

@@ -344,7 +344,7 @@ export default function Home() {
       {/* Keep loader visible based on loaderVisible state, not loading state */}
       {loaderVisible && <Loader />}
       
-      <div className={`flex flex-col justify-center items-center min-h-full text-foreground transition-opacity duration-700 
+      <div className={`flex flex-col justify-center items-center min-h-full text-foreground transition-opacity duration-700 overflow-x-hidden
         ${loading ? 'opacity-0' : 'opacity-100'} 
         ${fadeIn ? 'block' : 'hidden'}`}
       >
@@ -537,7 +537,7 @@ export default function Home() {
             </div>
           )}
         </header>
-        <main className="flex flex-col flex-1 justify-between items-center mt-16 px-4 md:px-8 w-full max-w-screen-2xl content-area">
+        <main className="flex flex-col flex-1 justify-between items-center px-4 md:px-8 w-full max-w-screen-2xl content-area">
           {/* Render the active section component */}
           {renderActiveSection()}
 

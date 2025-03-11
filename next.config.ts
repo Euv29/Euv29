@@ -15,6 +15,17 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  images: {
+    // Either disable optimization for all images:
+    // unoptimized: true,
+    
+    // Or configure optimization to skip GIFs:
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      // If you have remote image sources, configure them here
+    ],
+    // This is implied - Next.js won't try to optimize GIFs
+  },
   /* other config options here */
 };
 
